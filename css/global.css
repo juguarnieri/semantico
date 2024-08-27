@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: rgba(255, 255, 255, 0.61);
+    color: rgb(255, 255, 255);
+
+}
+.site-header{
+    background-color: rgb(2, 44, 5);
+    color: rgb(255, 255, 255);
+    padding: 1 rem 0;
+    text-align: center;
+}

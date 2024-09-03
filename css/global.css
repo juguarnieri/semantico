@@ -6,12 +6,12 @@
 body{
     font-family:Helvetica, sans-serif;
     line-height: 1.5;
-    background-color: rgba(206, 226, 159, 0.674);
+    background-color: rgba(247, 250, 240, 0.674);
     color: rgb(80, 80, 80);
 
 }
 .site-header{
-    background-color: rgb(14, 73, 18);
+    background-color: rgb(6, 33, 8);
     color: rgb(255, 255, 255);
     padding: 1 rem 0;
     text-align: center;
@@ -24,4 +24,96 @@ body{
     list-style: none;
     display: flex;
     justify-content: center;
+}
+.main-nav .nav-link{
+    margin: 0 15px;
+}
+.main-nav .nav-link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.main-nav .nav-link:hover{
+    color: rgb(137, 168, 128);
+}
+.main-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+.article{
+    flex: 3;
+    background-color: rgb(9, 24, 3);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px #0a4e05;
+    border-radius: 5px;
+}
+.article-header{
+    border-bottom: 2px solid #ffffff;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.article-title{
+    color:#ffffff;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+.article-meta{
+    color:rgb(255, 255, 255);
+    font-size: 0.9em;
+}
+.article-section{
+    margin-bottom: 20px;
+}
+.section-title{
+    font-size: 1.4em;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.section-text{
+    margin-bottom: 15px;
+    color: #ffffff;
+    line-height: 1.0;
+}
+.image-figure{
+    margin-top: 20px 0;
+}
+.article-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.image-caption{
+    text-align: center;
+    font-size: 0.10em;
+    color: #ffffff77;
+    margin-top: 5px;
+}
+.sidebar{
+    flex: 1;
+    background-color: rgb(122, 181, 132);
+    padding: 10px;
+    box-shadow: 0 2px 4px #03240a;
+    border-radius: 5px;
+}
+.sidebar-title{
+    font-size: 1.6em;
+    color: #082105;
+    margin-bottom: 10px;
+}
+.sidebar-text{
+        color: #555;
+        line-height: 1.5;
+}
+.site-footer{
+    background-color: rgb(6, 33, 8);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
 }

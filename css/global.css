@@ -6,12 +6,12 @@
 body{
     font-family:Helvetica, sans-serif;
     line-height: 1.5;
-    background-color: rgba(255, 255, 255, 0.61);
-    color: rgb(255, 255, 255);
+    background-color: rgba(206, 226, 159, 0.674);
+    color: rgb(80, 80, 80);
 
 }
 .site-header{
-    background-color: rgb(2, 44, 5);
+    background-color: rgb(14, 73, 18);
     color: rgb(255, 255, 255);
     padding: 1 rem 0;
     text-align: center;
@@ -19,4 +19,9 @@ body{
 .site-title{
     margin-bottom: 10px;
     font-size: 2em;
+}
+.main-nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }

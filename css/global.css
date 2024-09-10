@@ -47,7 +47,7 @@ body{
 }
 .article{
     flex: 3;
-    background-color: rgb(9, 24, 3);
+    background-color: rgb(92, 107, 86);
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 2px 4px #0a4e05;
@@ -72,12 +72,12 @@ body{
 }
 .section-title{
     font-size: 1.4em;
-    color: #ffffff;
+    color: #183805;
     margin-bottom: 10px;
 }
 .section-text{
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #000000;
     line-height: 1.0;
 }
 .image-figure{
@@ -96,7 +96,7 @@ body{
 }
 .sidebar{
     flex: 1;
-    background-color: rgb(122, 181, 132);
+    background-color: rgb(139, 180, 146);
     padding: 10px;
     box-shadow: 0 2px 4px #03240a;
     border-radius: 5px;

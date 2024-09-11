@@ -1,43 +1,52 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family:Helvetica, sans-serif;
-    line-height: 1.5;
-    background-color: rgba(247, 250, 240, 0.674);
-    color: rgb(80, 80, 80);
 
+body {
+    font-family: Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: rgba(177, 194, 177, 0.37); 
+    color: rgb(80, 80, 80);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Isso faz o conteúdo ficar entre o topo e o rodapé */
+    min-height: 100vh; /* Garantir que o body ocupe a altura total da tela */
 }
-.site-header{
-    background-color: rgb(6, 33, 8);
-    color: rgb(255, 255, 255);
-    padding: 1 rem 0;
+
+.site-header {
+    background-color: rgb(58, 80, 58); 
+    color: rgb(241, 239, 236);
+    padding: 1rem 0; /* Correção do padding */
     text-align: center;
 }
-.site-title{
+
+.site-title { 
     margin-bottom: 10px;
     font-size: 2em;
 }
-.main-nav .nav-list{
+
+.main-nav .nav-list {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center; 
+    gap: 20px; 
 }
-.main-nav .nav-link{
-    margin: 0 15px;
-}
-.main-nav .nav-link{
-    color: rgb(255, 255, 255);
+
+.main-nav .nav-link {
+    color: rgb(241, 240, 240);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
-.main-nav .nav-link:hover{
-    color: rgb(137, 168, 128);
+
+.main-nav .nav-link:hover {
+    color: rgb(145, 176, 135); 
 }
-.main-content{
+
+.main-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -45,75 +54,239 @@ body{
     margin: 40px auto;
     padding: 0 20px;
 }
-.article{
+
+.article {
     flex: 3;
-    background-color: rgb(92, 107, 86);
+    background-color: rgb(58, 80, 58); 
     padding: 20px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 4px #0a4e05;
+    box-shadow: 0 2px 4px rgba(0, 50, 0, 0.5); 
     border-radius: 5px;
 }
-.article-header{
-    border-bottom: 2px solid #ffffff;
+
+.article-header {
+    border-bottom: 4px solid #ffffff;
     margin-bottom: 15px;
     padding-bottom: 10px;
 }
-.article-title{
-    color:#ffffff;
+
+.article-title {
+    color: #ffffff;
     font-size: 1.5em;
     margin-bottom: 30px;
 }
-.article-meta{
-    color:rgb(255, 255, 255);
+
+.article-meta {
+    color: rgb(255, 255, 255);
     font-size: 0.9em;
 }
-.article-section{
+
+.article-section {
     margin-bottom: 20px;
 }
-.section-title{
+
+.section-title {
     font-size: 1.4em;
-    color: #183805;
+    color: #ffffff; 
     margin-bottom: 10px;
 }
-.section-text{
+
+.section-text {
     margin-bottom: 15px;
-    color: #000000;
+    color: #ebf5ea; 
     line-height: 1.0;
 }
-.image-figure{
-    margin-top: 20px 0;
+
+.image-figure {
+    margin: 20px 0; 
 }
-.article-image{
+
+.article-image {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
 }
-.image-caption{
+
+.image-caption {
     text-align: center;
-    font-size: 0.10em;
-    color: #ffffff77;
+    font-size: 0.9em;
+    color: #ffffff;
     margin-top: 5px;
 }
-.sidebar{
+
+.sidebar {
     flex: 1;
-    background-color: rgb(139, 180, 146);
-    padding: 10px;
-    box-shadow: 0 2px 4px #03240a;
+    min-width: 300px; 
+    background-color: rgb(192, 204, 192); 
     border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 50, 0, 0.5); 
 }
-.sidebar-title{
+
+
+.sidebar-title {
     font-size: 1.6em;
-    color: #082105;
+    color: #003300;
     margin-bottom: 10px;
 }
-.sidebar-text{
-        color: #555;
-        line-height: 1.5;
+
+.sidebar-text {
+    color: #000000;
+    line-height: 1.5;
 }
-.site-footer{
-    background-color: rgb(6, 33, 8);
+
+.site-footer {
+    background-color: rgb(58, 80, 58); 
     color: #ffffff;
     text-align: center;
-    padding: 10px;
+    padding: 20px; 
     margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.audio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.article-footer {
+    text-align: center; /* Centraliza o rodapé do conteúdo principal */
+}
+
+.main-content {
+    flex-grow: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.email-link {
+    color: #b86521;
+}
+
+.footer-copy {
+    margin-top: 10px;
+    font-size: 0.8em;
+}
+
+/* Página de contato */
+.contact-page .main-content {
+    max-width: 800px; 
+    margin: 20px auto;
+    padding-bottom: 10px;
+    margin-bottom: 4rem;
+    background-color: rgb(192, 204, 192);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-page .section-title {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #003300; 
+    text-align: center;
+}
+
+.contact-page .section-text {
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact-page .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.contact-page .form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-page .form-label {
+    margin-bottom: 5px;
+    font-size: 1em;
+    color: #000000;
+}
+
+.contact-page .form-input, 
+.contact-page .form-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #000000;
+    transition: border-color 0.3s ease;
+}
+
+.contact-page .form-input:focus, 
+.contact-page .form-textarea:focus {
+    border-color: #003300; 
+    outline: none;
+}
+
+.contact-page .form-button {
+    padding: 10px 15px;
+    background-color: rgb(58, 80, 58); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-page .form-button:hover {
+    background-color: #002600; 
+}
+
+/* Página Sobre */
+.sobre-page .main-content {
+    background-color: rgb(192, 204, 192); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.sobre-page .section-title {
+    font-size: 2em;
+    color: #003300;
+    padding-bottom: 10px;
+    max-width: 1200px; 
+    border-bottom: 4px solid #003300; 
+    margin-bottom: 15px;
+}
+
+.sobre-page .section-text {
+    font-size: 1.1em;
+    color: #000000; 
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+
+.sobre-page .about-video-title {
+    font-size: 1.5em;
+    color: #003300;
+    margin-bottom: 10px;
+    padding-bottom: 10px; 
+
+}
+.sobre-page .about-video {
+    display: block;
+    max-width: 100%;
+    max-width: 1200px; 
+    height: auto;
+    border: 2px solid #000000; 
+    border-radius: 8px; 
+    margin-bottom: 15px;
 }
